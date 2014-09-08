@@ -1,4 +1,4 @@
 slides
 ======
 
-Various presntations (at least one).
+Various presentations (at least one).
