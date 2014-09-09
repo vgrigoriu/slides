@@ -14,7 +14,8 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-      .quote { background-color: #eee; }
+      blockquote { background-color: #eee; padding: 0.8em 1em; text-align: justify; }
+      blockquote p { margin: 0; }
     </style>
   </head>
   <body>
@@ -53,11 +54,9 @@ Code without tests.
 ---
 # Preserving behavior
 
-.quote[
 > Preserving existing behavior is one of the largest challenges in software development.
 > Even when we are changing primary features, we often have very large areas of behavior
 > that we have to preserve.
-]
 
 ---
 # Risky changes
@@ -66,9 +65,11 @@ Ask three questions:
 --
 
 1. What changes do we have to make?
+
 --
 
 2. How will we know that we’ve done them correctly?
+
 --
 
 3. How will we know that we haven’t broken anything?
@@ -91,21 +92,17 @@ Ask three questions:
 ---
 # Dependencies in legacy code
 
-.quote[
 > Dependency is one of the most critical problems in software development. Much legacy code work
 > involves breaking dependencies so that change can be easier.
-]
 
 ---
 # The Legacy Code Dilemma
 
-.quote[
 > When we change code, we should have tests in place. To put tests in place,
 > we often have to change code.
-]
 --
 
-The solution is conservative refactorings that break dependencies, e.g.
+ Solution: conservative refactorings that break dependencies, e.g.
 extract interface
 ???
 chiar dacă nu arată asa frumos
@@ -122,6 +119,19 @@ chiar dacă nu arată asa frumos
 --
 
 “make functional changes that deliver value while bringing more of the system under test”
+
+---
+# Sensing and separation
+
+Reasons to break dependencies:
+- *sensing*: when we can't access values that our code computes
+- *separation*: when we can't even get a piece of code in a test harness
+
+
+--
+
+ Solution:
+- **fake objects**
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
     </script>
