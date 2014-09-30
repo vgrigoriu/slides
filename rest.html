@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Legacy Code I</title>
+    <title>RESTful Web APIs</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -25,6 +25,37 @@ class: center, middle
 
 # RESTful Web APIs
 
+---
+
+- resource, representation
+
+- addressability
+
+- short sessions (not statelessness)
+
+- self-descriptive messages / discoverability: ai linkuri spre ce să faci mai departe
+
+- standardized methods (GET, POST etc.)
+
+---
+
+- application state (la ce pagină e clientul?)
+
+> Application state is kept on the client, but the server can manipulate it
+> by sending representations—HTML documents, in this case—that describe
+> the possible state transitions.
+
+- resource state (pe server)
+
+> Resource state is kept on the server, but the client can manipulate it by
+> sending the server a representation—an HTML form submission, in this
+> case—describing the desired new state.
+
+---
+
+- connectedness / HATEOAS
+
+- completăm `&lt;form&gt;`-uri & urmăm linkuri
 
 ---
 class: center, middle
