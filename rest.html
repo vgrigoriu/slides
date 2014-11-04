@@ -35,17 +35,49 @@ class: center, middle
 
 ---
 
-- resource, representation
+<img src="http://restfulwebapis.com/images/rwa-cover.jpg" height="400px">
+[cartea](http://1drv.ms/1tCZmsc)
+
+---
+
+HTTP
+----
+
+- conexiune, request, response
+
+--
+- verbe/metode: GET, POST
+--
+, PUT, DELETE etc.
+
+--
+- status codes
+
+--
+- header, body
+
+---
+
+REST
+----
+
+- resource: orice; dar trebuie să poată fi adresat - URL
 
 --
 
-- addressability
+- representation: descrie starea unei resurse
 
-- short sessions (not statelessness)
+--
 
-- self-descriptive messages / discoverability: ai linkuri spre ce să faci mai departe
+- se trimit back &amp; forth
 
-- standardized methods (GET, POST etc.)
+--
+
+- protocol semantics: ce înseamnă metodele HTTP? (safe, idempotent, non-idempotent)
+
+--
+
+- short sessions (not statelessness); serverul nu știe starea fiecărui client
 
 ---
 
@@ -55,6 +87,8 @@ class: center, middle
 > by sending representations—HTML documents, in this case—that describe
 > the possible state transitions.
 
+--
+
 - resource state (pe server)
 
 > Resource state is kept on the server, but the client can manipulate it by
@@ -63,9 +97,13 @@ class: center, middle
 
 ---
 
+- hypermedia: serverul spune clientului ce poate face mai departe
+
 - connectedness / HATEOAS
 
-- completăm `&lt;form&gt;`-uri & urmăm linkuri
+- există în HTML: completăm `&lt;form&gt;`-uri & urmăm linkuri
+
+- mai avem de lucru pentru Web APIs
 
 ---
 layout: false
