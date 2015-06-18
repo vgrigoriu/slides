@@ -4,7 +4,7 @@
 
 # Debugging is hard
 
-Let's go shopping
+<img src="images/cover.jpg" alt="book cover" style="width: 300px;"/>
 
 # The 9 rules
 
