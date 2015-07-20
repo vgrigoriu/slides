@@ -40,8 +40,13 @@
 
 # Make it fail
 
-- do it again
-- start at th beginning
+- so you can look at it
+- so you can focus on the cause
+- so you can tell if you've fixed it
+
+# Make it fail
+
+- start at the beginning
 - stimulate the failure
 - don't simulate the failure
 - find the uncontrolled condition that makes it intermittent
@@ -51,6 +56,8 @@
 - never throw away a debugging tool
 
 # Quit thinking and look
+
+- see he failure
 
 ăâîșț ĂÂÎȘȚ
 
